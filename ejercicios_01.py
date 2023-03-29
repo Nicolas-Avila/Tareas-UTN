@@ -2,6 +2,7 @@
 
 numero_string = input("ingrese numero")
 numero = int(numero_string)
+#numero_string = int(input("ingrese numero"))
 
 if (numero > 0):
     print("el numero ingresado es positivo")
