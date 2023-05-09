@@ -6,7 +6,7 @@
 
 
 ## Proyecto: Contador binario.
-![Tinkercad](./img/ContadorBinario.png)
+![Tinkercad](/circuito.png)
 
 
 ## Descripción
@@ -16,18 +16,21 @@ Deberá recorrer las estaciones comenzando por constitución y mostrará en el d
 ## Función principal
 Un sistema que permite al usuario saber a qué estación de subte está llegando, aparte  el sistema muestra las estaciones que faltan hasta llegar a destino.
 
-B0, B1, B2, B3 son #define que utilizamos para agregar los leds, asociandolo a pines de la placa arduino.
-
 (Breve explicación de la función)
 
 ~~~ C (lenguaje en el que esta escrito)
-void EncenderBinario(int estado3, int estado2,int estado1,int estado0)
-{
-  digitalWrite(B3,estado3);
-  digitalWrite(B2,estado2);
-  digitalWrite(B1,estado1);
-  digitalWrite(B0,estado0);
-}
+void display_nro(int cont) {
+  if (cont == 1) {
+    digitalWrite(displayA, HIGH);
+    digitalWrite(displayB, HIGH);
+    digitalWrite(displayC, HIGH);
+    digitalWrite(displayD, HIGH);
+    digitalWrite(displayE, HIGH);
+    digitalWrite(displayF, HIGH);
+    delay(2000);
+    display_apagado();
+    cont++;
+  }
 ~~~
 
 ## :robot: Link al proyecto
